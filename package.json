@@ -1,0 +1,17 @@
+{
+  "name": "orders-service",
+  "private": true,
+  "packageManager": "pnpm@9.15.9",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=9"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @orders/api dev",
+    "start": "pnpm --filter @orders/api start",
+    "db:migrate": "pnpm --filter @orders/api db:migrate",
+    "db:seed": "pnpm --filter @orders/api db:seed",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck"
+  }
+}
